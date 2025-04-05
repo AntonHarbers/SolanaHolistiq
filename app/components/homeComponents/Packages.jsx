@@ -81,34 +81,29 @@ export default function Packages() {
   };
 
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-white to-amber-50">
+    <section
+      id="packages"
+      className="py-16 px-4 bg-gradient-to-b from-white to-amber-50"
+    >
       <div className="max-w-5xl mx-auto">
         {/* Toggle Buttons */}
         <div className="flex justify-center mb-8">
           <button
             onClick={() => togglePackages(false)}
-            className={`mr-4 px-4 py-2 border rounded transition duration-300 ${
-              !showGroup
-                ? 'bg-primary text-white'
-                : 'bg-white text-gray-800 border-gray-300'
-            }`}
+            className={`mr-4 px-4 py-2 border rounded transition duration-300 `}
           >
             One-on-One
           </button>
           <button
             onClick={() => togglePackages(true)}
-            className={`px-4 py-2 border rounded transition duration-300 ${
-              showGroup
-                ? 'bg-primary text-white'
-                : 'bg-white text-gray-800 border-gray-300'
-            }`}
+            className={`px-4 py-2 border rounded transition duration-300 `}
           >
             Group
           </button>
         </div>
 
         {/* Container for package cards */}
-        <div className="relative min-h-[24rem]">
+        <div className="relative md:min-h-[24rem]">
           <AnimatePresence mode="wait">
             <motion.div
               key={showGroup ? 'group' : 'one-on-one'}
@@ -116,7 +111,7 @@ export default function Packages() {
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="absolute top-0 left-0 right-0 grid grid-cols-1 md:grid-cols-3 gap-8"
+              className="md:absolute top-0 left-0 right-0 grid grid-cols-1 md:grid-cols-3 gap-8"
             >
               {packagesToShow.map((pkg) => (
                 <motion.div
