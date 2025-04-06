@@ -15,13 +15,12 @@ export default function Newsletter() {
     console.log(data);
     // Future API call integration goes here.
     setSubscribed(true);
-    // Optionally reset the form if needed:
     reset();
   };
 
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-amber-50 to-white">
-      <div className="max-w-2xl mx-auto bg-white p-8 rounded shadow">
+    <section className="py-16 px-4 bg-gradient-to-b from-amber-50 to-white animate-fadeIn">
+      <div className="max-w-2xl mx-auto bg-white p-8 rounded shadow animate-fadeIn">
         <h2 className="text-2xl font-semibold mb-4">Join Our Newsletter</h2>
         <p className="mb-4">
           Get a free meal plan and stay updated on new events!

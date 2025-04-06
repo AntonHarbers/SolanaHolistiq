@@ -36,9 +36,10 @@ export default function Hero() {
               Solana Holistiq
             </h1>
             <p className="text-xl text-gray-600 mb-6">
-              Unleash your inner harmony with transformative holistic coaching.
-              Dive into personalized sessions that blend wellness, mindfulness,
-              and life balance to empower you every step of the way.
+              Coaching and courses that integrate the body, mind, and spirit —
+              guiding professional women back to their power, balance, and
+              purpose. Through simplicity, elegance, and truth, we create
+              ecosystems of wellness that ripple into every part of life.
             </p>
             <button className="mx-auto md:mx-0 w-fit bg-primary hover:bg-accent transition-all duration-300 ease-in-out text-white font-semibold py-3 px-8 rounded shadow-lg transform hover:-translate-y-1 hover:scale-105 animate-fadeIn delay-300">
               Get Started
@@ -58,16 +59,17 @@ export default function Hero() {
           <h2 className="text-3xl font-semibold text-gray-800 mb-2">
             Meet Your Guide
           </h2>
-          <div className="flex flex-col sm:flex-row items-center sm:space-x-4">
+          <div className="flex flex-col max-w-5xl sm:flex-row items-center sm:space-x-4">
             <img
               src="https://picsum.photos/seed/coach/100/100"
               alt="Coach Profile"
               className="w-24 h-24 rounded-full border-4 border-primary shadow-md mb-4 sm:mb-0"
             />
             <p className="text-lg text-gray-700 text-center sm:text-left">
-              Jane Doe, a renowned holistic coach with over a decade of
-              empowering journeys, is here to guide you toward a balanced and
-              fulfilling life.
+              I’m Lana, the woman behind the vision. With a background shaped by
+              ten cultures and a journey filled with both depth and diversity,
+              I’ve come to believe in one thing: everything we need already
+              lives within us.
             </p>
           </div>
         </div>

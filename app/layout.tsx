@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Link from "next/link";
 import "./globals.css";
-import Image from "next/image";
+import Footer from "./components/homeComponents/global/Footer";
+import Header from "./components/homeComponents/global/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,109 +29,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* Header */}
-        <header
-          className="fixed top-0 left-0 right-0 shadow z-50"
-          style={{ backgroundColor: "var(--background)" }}
-        >
-          <div className="max-w-5xl mx-auto flex justify-between items-center px-4 py-3">
-            <Link href="/" className="flex items-center">
-              <Image
-                src="https://dummyimage.com/150x50/cccccc/000000.png&text=Logo"
-                alt="Logo"
-
-                width={24}
-                height={24}
-                className="h-8"
-              />
-            </Link>
-            <nav>
-              <ul className="flex space-x-4">
-                <li>
-                  <a
-                    href="#packages"
-                    className="text-gray-800 hover:text-blue-600 transition"
-                  >
-                    Packages
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-
+        <Header />
         {/* Main content with top padding to offset fixed header */}
-        <div className="">{children}</div>
-
-        {/* Footer */}
-        <footer
-          className="py-4 border-t border-gray-200"
-          style={{ backgroundColor: "var(--background)" }}
-        >
-          <div className="max-w-5xl mx-auto flex justify-between items-start px-4">
-            {/* Left section: Logo above copyright */}
-            <div className="flex flex-col items-start">
-              <Image
-                src="https://dummyimage.com/150x50/cccccc/000000.png&text=Logo"
-                alt="Logo"
-
-                width={24}
-                height={24}
-                className="h-8 mb-2"
-              />
-              <span className="text-sm">
-                &copy; {new Date().getFullYear()} Your Company
-              </span>
-            </div>
-            {/* Right section: Social media icons */}
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition"
-              >
-                <Image
-                  src="https://cdn.jsdelivr.net/npm/simple-icons@8.15.0/icons/youtube.svg"
-                  alt="YouTube"
-
-                  width={24}
-                  height={24}
-                  className="w-6 h-6"
-                />
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition"
-              >
-                <Image
-                  src="https://cdn.jsdelivr.net/npm/simple-icons@8.15.0/icons/linkedin.svg"
-                  alt="LinkedIn"
-
-                  width={24}
-                  height={24}
-                  className="w-6 h-6"
-                />
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition"
-              >
-                <Image
-                  src="https://cdn.jsdelivr.net/npm/simple-icons@8.15.0/icons/tiktok.svg"
-                  alt="TikTok"
-                  width={24}
-                  height={24}
-                  className="w-6 h-6"
-                />
-              </a>
-            </div>
-          </div>
-        </footer>
+        <div className="pt-20">{children}</div>
+        <Footer />
       </body>
     </html>
   );
