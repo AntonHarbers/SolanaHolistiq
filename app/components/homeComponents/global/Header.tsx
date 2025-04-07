@@ -11,6 +11,7 @@ export default function Header() {
             <div className="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
                 <Link href="/" className="flex items-center">
                     <Image
+                        priority
                         src={Logo}
                         alt="Logo"
                         width={100}

@@ -11,11 +11,12 @@ export default function Footer() {
                 {/* Left section: Logo above copyright */}
                 <div className="flex flex-col items-center">
                     <Image
+                        priority
                         src={Logo}
                         alt="Logo"
-                        width={75}
+                        width={50}
                         height={50}
-                        className="h-auto mb-2"
+                        className="h-auto mb-2 w-auto"
                     />
                     <span className="text-sm">
                         &copy; {new Date().getFullYear()} Solana Holistiq
