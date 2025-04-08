@@ -2,9 +2,18 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 import unsubscribeAction from "../actions/unsubscribe";
 
 export default function UnsubscribePage() {
+    return (
+        <Suspense fallback={<p className="p-8 text-center">Loading unsubscribe...</p>}>
+            <UnsubscribePageContent />
+        </Suspense>
+    );
+}
+
+function UnsubscribePageContent() {
     const searchParams = useSearchParams();
     const email = searchParams.get("email");
 
@@ -23,11 +32,6 @@ export default function UnsubscribePage() {
             <p className="mb-4">
                 Are you sure you want to unsubscribe {email}? Click the button below to confirm.
             </p>
-            {/* 
-          Instead of using a client handler, we pass the email as a hidden input
-          and set the form's action to the server action. Next.js will call the
-          unsubscribeAction on the server, which will process the request and redirect.
-      */}
             <form action={unsubscribeAction} method="POST">
                 <input type="hidden" name="email" value={email} />
                 <button
