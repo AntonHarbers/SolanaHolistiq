@@ -2,14 +2,21 @@
 
 :root {
   /* Base Colors */
-  --background: #faf5ef; /* warm light cream */
+  --background: #c4e3ed; /* warm light cream */
   --foreground: #3c3c3c; /* soft, trustable dark text */
 
   /* Accent Colors */
-  --primary: #d99873; /* warm coral peach for primary accents */
-  --secondary: #8aa398; /* muted sage green for secondary accents */
-  --accent: #e7b89b; /* soft highlight color */
-  --muted: #b3a89c; /* extra muted tone for subtle details */
+  --primary: #57aac6; /* warm coral peach for primary accents */
+  --secondary: #51cd91; /* muted sage green for secondary accents */
+  --accent: #51cd91; /* soft highlight color */
+  --muted: #ddeaf7; /* extra muted tone for subtle details */
+
+  --powder-blue: #ddeaf7;
+  --soft-lilac: #e7ddef;
+  --pale-yellow-green: #dcecc5;
+  --off-white: #f2f2f2;
+  --peachy-pastel: #f7e3cf;
+  --icy-light-blue: #c4e3ed;
 }
 
 body {

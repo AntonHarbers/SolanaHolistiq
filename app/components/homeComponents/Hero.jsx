@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-amber-50 to-white py-20 animate-fadeIn">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#f7e3cf] to-[#e7ddef] py-20 animate-fadeIn">
       {/* Decorative background blob */}
       <div className="absolute inset-0">
         <svg
@@ -21,8 +21,8 @@ export default function Hero() {
               r="300"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#FBD38D" />
-              <stop offset="1" stopColor="#FEEBC8" />
+              <stop stopColor="#47d597" />
+              <stop offset="1" stopColor="#dcecc5" />
             </radialGradient>
           </defs>
         </svg>
@@ -33,7 +33,7 @@ export default function Hero() {
         <div className="flex flex-col-reverse md:flex-row items-center gap-10">
           <div className="md:w-1/2 mt-10 md:mt-0 animate-fadeIn delay-150 flex flex-col">
             <h1 className="text-5xl font-extrabold text-gray-800 leading-tight mb-4">
-              Solana Holistiq
+              Stellana Holistiq
             </h1>
             <p className="text-xl text-gray-600 mb-6">
               Coaching and courses that integrate the body, mind, and spirit —

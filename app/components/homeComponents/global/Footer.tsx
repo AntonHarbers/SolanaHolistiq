@@ -5,7 +5,7 @@ import Logo from '@/public/Logo.png'
 export default function Footer() {
     return (
         <footer
-            className="py-4 border-t border-gray-200 animate-fadeIn bg-amber-50"
+            className="py-4 border-t-2 border-white animate-fadeIn bg-[#e7ddef]"
         >
             <div className="max-w-6xl mx-auto flex justify-between items-center px-4">
                 {/* Left section: Logo above copyright */}
@@ -19,7 +19,7 @@ export default function Footer() {
                         className="h-auto mb-2 w-auto"
                     />
                     <span className="text-sm">
-                        &copy; {new Date().getFullYear()} Solana Holistiq
+                        &copy; {new Date().getFullYear()}
                     </span>
                 </div>
                 {/* Right section: Social media icons */}

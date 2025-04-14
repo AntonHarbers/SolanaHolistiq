@@ -6,9 +6,9 @@ import Logo from '@/public/Logo.png'
 export default function Header() {
     return (
         <header
-            className="fixed top-0 left-0 right-0 shadow z-50 bg-amber-50 animate-fadeIn"
+            className="fixed top-0 left-0 right-0 shadow shadow-white z-50 bg-[#f7e3cf] animate-fadeIn"
         >
-            <div className="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
+            <div className="max-w-6xl mx-auto flex justify-between items-center px-4 py-1">
                 <Link href="/" className="flex items-center">
                     <Image
                         priority

@@ -31,8 +31,8 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-amber-50 to-white animate-fadeIn">
-      <div className="max-w-2xl mx-auto bg-white p-8 rounded shadow animate-fadeIn">
+    <section className="py-16 px-4 bg-gradient-to-b from-[#f7e3cf] to-[#e7ddef]  animate-fadeIn">
+      <div className="max-w-2xl mx-auto bg-white/30 p-8 rounded shadow animate-fadeIn">
         <h2 className="text-2xl font-semibold mb-4">Join Our Newsletter</h2>
         <p className="mb-4">Get a free meal plan and stay updated on new events!</p>
         {subscriptionStatus === "subscribed" && (

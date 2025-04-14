@@ -66,7 +66,7 @@ export default function DiscoveryCall() {
       {modalOpen && (
         <motion.div
           key="overlay"
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-[#f7e3cf]   bg-opacity-50"
           variants={overlayVariants}
           initial="initial"
           animate="animate"
@@ -155,7 +155,7 @@ export default function DiscoveryCall() {
   );
 
   return (
-    <section className="bg-gradient-to-br from-amber-50 to-white py-16 px-4 animate-fadeIn">
+    <section className="bg-gradient-to-br to-[#f7e3cf] from-[#f7e3cf] py-16 px-4 animate-fadeIn">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4">
           Schedule Your Free Discovery Call
