@@ -159,7 +159,7 @@ export default function Packages() {
   return (
     <section
       id="packages"
-      className="py-16 px-4 bg-gradient-to-b to-[#f7e3cf] from-[#e7ddef] "
+      className="py-16 px-4 bg-gradient-to-b to-[#f7e3cf] from-[#e7ddef]"
     >
       <div className="max-w-7xl scroll-auto mx-auto">
         {/* Toggle Buttons */}
@@ -179,7 +179,7 @@ export default function Packages() {
         </div>
 
         {/* Container for package cards */}
-        <div className="relative md:min-h-[40rem] md:my-16 md:overflow-x-scroll overflow-y-hidden scroll-smooth">
+        <div className="relative md:py-10 overflow-y-hidden overflow-x-auto scroll-smooth px-4 ">
           <AnimatePresence mode="wait">
             <motion.div
               key={showGroup ? 'group' : 'one-on-one'}
@@ -187,30 +187,30 @@ export default function Packages() {
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="md:absolute top-0 left-0 right-0 grid grid-cols-1 md:flex gap-8 "
+              className="flex flex-col md:flex-row gap-8"
             >
               {packagesToShow.map((pkg) => (
                 <motion.div
                   key={pkg.title}
                   variants={cardVariants}
-                  className="w-full"
+                  className="flex-shrink-0 w-full md:w-[400px]"
                 >
-                  <div className="bg-white/20 p-4 rounded shadow text-center flex flex-col md:w-[400px] justify-between transition duration-300 hover:-translate-y-1 hover:scale-105 md:h-[450px]">
+                  <div className="bg-white/20 p-4 rounded shadow text-center flex flex-col justify-between transition duration-300 hover:-translate-y-1 hover:scale-105 md:h-[450px]">
                     <div>
-                      <h3 className="text-3xl font-semibold text-center mb-2">
+                      <h3 className="text-3xl font-semibold mb-2">
                         {pkg.title}
                       </h3>
                       <h2 className="text-xl mb-2">Goal: {pkg.goal}</h2>
-                      <ul className="list-disc list-inside text-center mb-4">
+                      <ul className="list-disc list-inside mb-4 text-gray-600">
                         {pkg.details.map((detail, i) => (
-                          <li key={i} className="text-sm text-gray-600">
+                          <li key={i} className="text-sm">
                             {detail}
                           </li>
                         ))}
                       </ul>
                     </div>
-                    <div className="flex justify-center flex-col">
-                      <p className="text-2xl font-bold mb-4 inline-block px-4 py-2 bg-primary/10 text-primary rounded">
+                    <div className="flex flex-col items-center">
+                      <p className="text-2xl font-bold mb-4 px-4 py-2 bg-primary/10 text-primary rounded">
                         {pkg.price}
                       </p>
                       <button className="bg-primary hover:bg-accent transition duration-300 text-white font-semibold px-4 py-2 rounded">

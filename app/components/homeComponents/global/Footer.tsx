@@ -14,11 +14,11 @@ export default function Footer() {
                         priority
                         src={Logo}
                         alt="Logo"
-                        width={50}
-                        height={50}
-                        className="h-auto mb-2 w-auto"
+                        width={60}
+                        height={60}
+                        className="h-auto w-auto"
                     />
-                    <span className="text-sm">
+                    <span className="text-xs">
                         &copy; {new Date().getFullYear()}
                     </span>
                 </div>

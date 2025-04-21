@@ -41,9 +41,6 @@ export default function Hero() {
               purpose. Through simplicity, elegance, and truth, we create
               ecosystems of wellness that ripple into every part of life.
             </p>
-            <button className="mx-auto md:mx-0 w-fit bg-primary hover:bg-accent transition-all duration-300 ease-in-out text-white font-semibold py-3 px-8 rounded shadow-lg transform hover:-translate-y-1 hover:scale-105 animate-fadeIn delay-300">
-              Get Started
-            </button>
           </div>
           <div className="md:w-1/2 flex justify-center animate-fadeIn delay-200">
             <img

@@ -16,7 +16,7 @@ export default function Header() {
                         alt="Logo"
                         width={100}
                         height={100}
-                        className="h-auto"
+                        className="h-auto hover:scale-110 transition duration-150 active:scale-95"
                     />
                 </Link>
                 <nav>
