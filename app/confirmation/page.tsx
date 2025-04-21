@@ -1,14 +1,14 @@
 // File: app/confirmation/page.tsx
 import Stripe from 'stripe';
 
-export const dynamic = 'force-dynamic'; // ensure we can fetch at runtime
+// (optional) ensure this page always fetches fresh data
+export const dynamic = 'force-dynamic';
 
-export default async function Page({
-    searchParams,
-}: {
-    searchParams: { session_id?: string };
-}) {
+export default async function Page(props: any) {
+    // Pull out searchParams from props
+    const searchParams = props.searchParams as { session_id?: string };
     const session_id = searchParams.session_id;
+
     if (!session_id) {
         return (
             <main className="p-8">
@@ -18,12 +18,9 @@ export default async function Page({
         );
     }
 
-    // Initialize Stripe on the server
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
         apiVersion: '2025-03-31.basil',
     });
-
-    // Retrieve the session and expand line items & customer details
     const session = await stripe.checkout.sessions.retrieve(session_id, {
         expand: ['line_items', 'customer_details'],
     });
