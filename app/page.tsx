@@ -5,7 +5,7 @@ import Hero from './components/homeComponents/Hero';
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <Hero />
       <Packages />

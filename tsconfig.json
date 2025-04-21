@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/discoveryCall.ts", "app/components/homeComponents/Packages.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/discoveryCall.ts", "app/components/homeComponents/Packages.tsx"],
   "exclude": ["node_modules"]
 }
