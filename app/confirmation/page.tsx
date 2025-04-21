@@ -4,7 +4,13 @@ import Stripe from 'stripe';
 // (optional) ensure this page always fetches fresh data
 export const dynamic = 'force-dynamic';
 
-export default async function Page(props: any) {
+interface PageProps {
+    searchParams: {
+        session_id?: string;
+    };
+}
+
+export default async function Page(props: PageProps) {
     // Pull out searchParams from props
     const searchParams = props.searchParams as { session_id?: string };
     const session_id = searchParams.session_id;
